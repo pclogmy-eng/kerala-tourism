@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip – Kerala Tourism</title>
+  <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+
+  <header>
+    <h1>Plan Your Kerala Trip</h1>
+         <nav>
+            <a href="index.html">Home</a>
+            <a href="places.html">Tourist Places</a>
+            <a href="culture.html">Culture</a>
+            <a href="form.html">Plan Your Trip</a>
+            <a href="about.html">About Kerala Tourism</a>
+            <a href="contact.html">Contact Info</a>
+         </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your Details</legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="40" placeholder="eg,.Jon Snow"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required maxlength="50" placeholder="eg.,example@gmail.com"><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Trip Preferences</legend>
+
+        <label for="destination">Preferred Destination:</label><br>
+        <select id="destination" name="destination" required>
+          <option value="">--Select--</option>
+          <option value="munnar">Munnar</option>
+          <option value="alleppey">Alleppey</option>
+          <option value="kochi">Kochi</option>
+          <option value="wayanad">Wayanad</option>
+        </select><br><br>
+
+        <label>What are you interested in?</label>
+        <input type="checkbox" id="beaches" name="interests" value="beaches">
+        <label for="beaches">Beaches</label>
+
+        <input type="checkbox" id="wildlife" name="interests" value="wildlife">
+        <label for="wildlife">Wildlife & Nature</label>
+
+        <input type="checkbox" id="culture" name="interests" value="culture">
+        <label for="culture">Culture & Heritage</label>
+
+        <input type="checkbox" id="ayurveda" name="interests" value="ayurveda">
+        <label for="ayurveda">Ayurveda & Wellness</label>
+</fieldset>
+
+    <fieldset>
+        <legend>Tell us about your plan</legend>
+        <label for="message">Additional Notes:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" minlength="20" maxlength="300" placeholder="Tell us about your travel plans..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="index.html">← Back to Home</a></p>
+    <p>Made with love in Kerala 🇮🇳</p>
+    <p>&copy; 2025 Kerala Tourism. All rights reserved.</p>
+  </footer>
+<script src="js/form.js" defer></script>
+</body>
+</html>
